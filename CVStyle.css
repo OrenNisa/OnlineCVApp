@@ -1,0 +1,57 @@
+nav.navbar   {
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 10;
+}
+
+section.Personal-info-section   {
+    padding-top: 55px;
+}
+section.Personal-info-section i   {
+    padding-right: 1em;
+}
+div.Pic-section {
+    float: right;
+    margin-right: 1000px;
+}
+img.Profile-Pic {
+    max-height: 180px;
+    border-radius: 75%;
+}
+
+section.Skills-section {
+    padding-top: 55px;
+}
+
+section.Education-section {
+    padding-top: 55px;
+}
+
+section.workExperience-section {
+    padding-top: 55px;
+}
+section.workExperience-section img {
+    height: 50px;
+    width: 50px;
+}
+
+section.Recommendations-section {
+    padding-top: 50px;
+}
+section.Recommendations-section img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+section.Recommendations-section > div.Guy {
+    text-align: center;
+    max-width: 400px;
+    display: inline-block;
+}
+section.Recommendations-section > div.Dor {
+    max-width: 400px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+}
