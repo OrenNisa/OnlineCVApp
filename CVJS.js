@@ -1,4 +1,5 @@
 window.onload = function () {
+    /*Modal image*/
     // Get the modal
     var modal = document.getElementById('myModal');
     // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -15,7 +16,7 @@ window.onload = function () {
         modal.style.display = "none";
     }
 
-    /*progress bar */
+    /*Progress bar animation*/
     const barsMaximum = {"javaBar":100, "cBar":75, "cppBar":85, "pythonBar":65}
     const Bars = document.getElementsByClassName("progress");
     for (i = 0; i < Bars.length; i++) {
@@ -26,10 +27,11 @@ window.onload = function () {
         for(j = 0; j < barsMaximum[bar]; j++) {
             this.children[0].style.width = j.toString() + "%";
             //alert("Hello! I am an alert box!!");
-            var id = setTimeout(null, 2000);
+            var id = setTimeout(null, 200);
         }
     }
 
+    /*Text length limit*/
     txtarea = document.getElementById("textToSubmit");
     txtarea.addEventListener("input", counter);
     currentChars = document.getElementById('curChars');
@@ -47,6 +49,7 @@ window.onload = function () {
         }
     }
 
+    /*Required text fields*/
     button.addEventListener("click", isEmpty);
     function isEmpty() {
         var x = document.querySelectorAll("div > input");
@@ -61,4 +64,9 @@ window.onload = function () {
             }
         }
     }
+
+    /*Back to top button*/
+    document.getElementById("toTopBtn").onclick = function(){
+        document.documentElement.scrollTop = 0;
+    };
 }
